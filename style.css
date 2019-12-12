@@ -1,0 +1,136 @@
+body
+{
+  background-color: #4e5166;
+}
+
+ul {
+  display: inline-grid;
+  grid-auto-flow: row;
+  grid-gap: 56px;
+  justify-items: center;
+  margin: auto;
+}
+
+@media (min-width: 500px) {
+  ul {
+    grid-auto-flow: column;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+}
+
+a:hover {
+  box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+}
+
+li:last-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+li:hover ~ li p {
+  -webkit-animation: wave-animation 0.3s infinite;
+          animation: wave-animation 0.3s infinite;
+}
+
+/* below is just for demo styling */
+
+div {
+  position: absolute;
+  display: flex;
+  bottom: 20px;
+  width: 100%;
+  
+  line-height: 1.3;
+  font-family: Menlo, monospace;
+}
+
+#buttons 
+{
+  position: relative;
+  top: 45px;
+  line-height: 1.3;
+}
+
+@-webkit-keyframes wave-animation {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  75% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+}
+
+@keyframes wave-animation {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  75% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  
+}
+
+h3
+{
+
+  font-size: 63px;
+
+}
+
+canvas {
+  border: 5px solid black;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  top: 60px;
+  width: 800px;
+}
+
+
+.myButton {
+	box-shadow:inset 0px 0px 15px 3px #23395e;
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:17px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+	background-color:#415989;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+

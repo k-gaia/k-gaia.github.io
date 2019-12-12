@@ -78,9 +78,9 @@
             ul {
                 display: inline-grid;
                 grid-auto-flow: row;
-                grid-gap: 24px;
+                grid-gap: 32px;
                 justify-items: center;
-                margin: auto 40%;
+
             }
 
             @media (min-width: 500px) {
@@ -101,10 +101,10 @@
 
             li:last-child {
                 grid-column: 1 / 2;
-                grid-row: 1 / 2;
+                grid-row: auto;
             }
 
-            li:hover ~ li p {
+            li:hover ~ li p{
                 animation: wave-animation 0.3s infinite;
             }
 
@@ -120,9 +120,8 @@
                 transform: rotate(-15deg);
             }
             }
-
-
         </style>
+
     </head>
 
     <body>
@@ -161,9 +160,7 @@
                   <li><a href="mailto:kevjnr@live.co.uk">Email</a></li>
                   <li><a href="https://dribbble.com/julesforrest">Dribbble</a></li>
                   <li><a href="https://github.com/julesforrest">Github</a></li>
-                  <li>
-                    <p>👋</p>
-                  </li>
+                  <li><p>👋</p></li>
                 </ul>
               </div>
 
