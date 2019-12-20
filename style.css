@@ -38,9 +38,18 @@ li:hover ~ li p {
           animation: wave-animation 0.3s infinite;
 }
 
+
+#latest {
+
+  position: relative;
+  bottom: -75px;
+  transform: translate(35.7%, 5%);
+
+}
+
 /* below is just for demo styling */
 
-div {
+#links {
   position: absolute;
   display: flex;
   bottom: 20px;
@@ -132,5 +141,6 @@ canvas {
 	position:relative;
 	top:1px;
 }
+
 
 
