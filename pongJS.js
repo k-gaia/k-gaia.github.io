@@ -8,7 +8,7 @@ var DIRECTION = {
 };
 
 var rounds = [5, 5, 3, 3, 2];
-var colors = ['#1abc9c', '#2ecc71', '#3498db', '#e74c3c', '#9b59b6'];
+var colors = ['#E98074', '#2ecc71', '#3498db', '#e74c3c', '#9b59b6'];
 
 // The ball object (The cube that bounces back and forth)
 var Ball = {
@@ -59,7 +59,7 @@ var Game = {
 		this.running = this.over = false;
 		this.turn = this.paddle;
 		this.timer = this.round = 0;
-		this.color = '#4e5166';
+		this.color = '#E98074';
 
 		Pong.menu();
 		Pong.listen();

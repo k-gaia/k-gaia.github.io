@@ -1,6 +1,6 @@
 body
 {
-  background-color: #4e5166;
+  background-color: #1F2833;
 }
 
 ul {
@@ -18,7 +18,7 @@ ul {
 }
 
 a {
-  color: white;
+  color: #E98074;
   text-decoration: none;
   font-size: 20px;
   box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
@@ -41,9 +41,9 @@ li:hover ~ li p {
 
 #latest {
 
-  position: relative;
-  bottom: -36px;
-  transform: translate(35.7%, 8%);
+  position: absolute;
+  bottom: 8%;
+  left: 35%;
 
 }
 
@@ -52,7 +52,7 @@ li:hover ~ li p {
 #links {
   position: absolute;
   display: flex;
-  bottom: 15px;
+  bottom: 10px;
   left: -36px;
   width: 100%;
   
@@ -102,13 +102,16 @@ h3
 
 canvas {
   border: 5px solid black;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0;
+  margin: auto;
   display: block;
-  top: 40px;
   width: 800px;
+  height: 600px;
+  position: absolute;
+  top: -170px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 
