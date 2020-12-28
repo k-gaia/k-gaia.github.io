@@ -14,11 +14,14 @@ h3 {
   font-size: 63px;
 }
 
-h4 {
+#subhead {
 
-  font-family: "Raleway"; 
-  color: #ff0035; 
-  font-size: 22px;
+   text-align: center;
+   position: relative; 
+   top: 30px; 
+   font-family: "Raleway"; 
+   font-size: 22px; 
+   color:#ff0035;
 
 } 
 
@@ -54,7 +57,7 @@ li:last-child {
   grid-row: 1 / 2;
 }
 
-li:hover ~ li p {
+li:hover ~ #hand  {
   -webkit-animation: wave-animation 0.3s infinite;
           animation: wave-animation 0.3s infinite;
 }
@@ -112,6 +115,12 @@ img {
   font-family: Menlo, monospace;
 }
 
+#hand {
+
+  font-size: 36px;
+
+}
+
 @-webkit-keyframes wave-animation {
   0%,
   100% {
@@ -143,6 +152,81 @@ img {
             transform: rotate(-15deg);
   }
   
+}
+
+@media screen and (max-width: 800px) {
+  h3 {
+    font-size: 36px; 
+    text-align: center;
+  }
+
+  #subhead {
+
+    font-size: 16px;
+
+  }
+
+  .row {
+
+    grid-gap: 16px;
+    transform: translate(2%, -90%);
+
+  }
+
+  img { 
+
+    width: 20%;
+
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  h3 {
+    font-size: 40px; 
+  }
+
+  #subhead {
+
+    font-size: 10px;
+
+  }
+
+  /* footer */
+
+  ul {
+
+    grid-gap: 16px;
+    transform: translate(32%, 90%);
+
+  }
+
+  #hand {
+
+    font-size: 32px;
+
+  }
+
+
+  /* Projects Grid */
+
+  .row {
+
+    transform: translate(28%, -48%);
+
+  }
+
+  .column {
+    flex: 50%;
+    max-width: 50%;
+    
+  }
+
+  .column img {
+
+    width: 70%;
+
+  }
 }
 
 
